@@ -1,0 +1,22 @@
+.text-h {
+ color: #4795A0;
+}
+
+.text-p {
+ color: #02396A;
+}
+
+.container-box {
+ padding-left: 110px;
+}
+
+[data-bs-theme="dark"] .text-p,
+[data-bs-theme="dark"] .text-h {
+ color: white;
+}
+
+@media (max-width: 768px) {
+ .container-box {
+  padding-left: 0px;
+ }
+}

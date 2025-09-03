@@ -1,0 +1,23 @@
+h1 {
+ font-size: 40px !important;
+}
+
+.highlight {
+ color: #083A5F;
+ animation: blink 3.5s infinite;
+ color: #083A5F;
+}
+
+@keyframes blink {
+
+ 0%,
+ 50%,
+ 100% {
+  opacity: 1;
+ }
+
+ 25%,
+ 75% {
+  opacity: 0;
+ }
+}

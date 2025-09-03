@@ -1,0 +1,19 @@
+.advertising-swiper {
+ width: 80%;
+ height: 50vh;
+}
+
+.advertising-slide {
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.advertising-slide img {
+ display: block;
+ width: 150px !important;
+ height: 150px !important;
+ border-radius: 50%;
+ object-fit: cover;
+}

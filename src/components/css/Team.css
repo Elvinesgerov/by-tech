@@ -1,0 +1,37 @@
+.box {
+ background-color: #3D8D8D;
+ height: auto;
+}
+
+.box-card {
+ width: 340px;
+ height: 350px;
+ margin-top: 20px;
+ transition: 1.1s;
+}
+
+.box-card:hover {
+ margin-top: -10px;
+}
+
+.box-card div {
+ width: 200px;
+ height: 200px;
+ border: 3px solid #4795A0;
+}
+
+.box-card h1 {
+ color: #4794B4;
+}
+
+.box-card-container {
+ padding-left: 15px;
+}
+
+[data-bs-theme="dark"] .team-container {
+ background-color: #1C1C27;
+}
+
+[data-bs-theme="dark"] .box-card {
+ background-color: #212529 !important;
+}
