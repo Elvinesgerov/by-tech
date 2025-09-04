@@ -36,7 +36,7 @@ function Footer({ language }) {
     <p className='fs-5 mx-auto text1'>{content.schedule}</p>
    </div>
 
-   <div className='d-flex flex-wrap justify-content-around align-items-start gap-4'>
+   <div className='d-flex flex-wrap justify-content-around card-box'>
 
     <div className='d-flex flex-column align-items-center gap-3'>
      <div className='rounded-circle d-flex align-items-center justify-content-center bg-primary icon-container'>

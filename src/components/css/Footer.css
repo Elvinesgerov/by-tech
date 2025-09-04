@@ -13,6 +13,32 @@ footer {
  max-width: 900px;
 }
 
+.card-box {
+ margin-left: -150px !important;
+ margin-top: 20px;
+}
+
 [data-bs-theme="dark"] .icon-container {
  background-color: #1C1C27 !important;
+}
+
+@media (max-width: 576px) {
+ .card-box {
+  margin-left: auto !important;
+  gap: 20px;
+ }
+}
+
+@media (min-width: 577px) and (max-width: 650px) {
+ .card-box {
+  flex-direction: column;
+  padding-left: 22% !important;
+  gap: 40px;
+ }
+}
+
+@media (min-width: 651px) and (max-width: 1400px) {
+ .card-box {
+  margin-left: -5% !important;
+ }
 }

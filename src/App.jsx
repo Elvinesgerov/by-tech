@@ -48,7 +48,7 @@ function App() {
       <Header language={language} setLanguage={changeLanguage} />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About language={language} />} />
       </Routes>
     </Router>
   );

@@ -37,9 +37,9 @@ function Header({ language, setLanguage }) {
      <div className="collapse navbar-collapse justify-content-between" id="navbarContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0 fs-5">
        <li className="nav-item">
-        <a href="#" className={`nav-link fw-bold ${activeLink === "home" ? "active-link" : ""}`}>
+        <Link to="/" className={`nav-link fw-bold ${activeLink === "home" ? "active-link" : ""}`}>
          {translations[language].home}
-        </a>
+        </Link>
        </li>
        <li className="nav-item">
         <a href="#" className={`nav-link fw-bold`}>
