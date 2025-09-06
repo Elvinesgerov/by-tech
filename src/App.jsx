@@ -7,14 +7,14 @@ import Header from './components/Header';
 import HeroSections from './components/HeroSections';
 import Zero from './components/Zero';
 import Services from './components/Services';
-import ScrollTopButton from './components/ScrollTopButton';
 import Social from './components/Social';
 import Preference from './components/Preference';
-import SwiperComponent from './components/SwiperComponent';
 import Offer from './components/Offer';
 import CommentSwiper from './components/CommentSwiper';
 import Team from './components/Team';
 import Advertising from './components/Advertising';
+import Collaborators from './components/Collaborators';
+import Post from './components/Post';
 import Footer from './components/Footer';
 import About from './components/About';
 
@@ -29,16 +29,16 @@ function App() {
   const HomePage = () => (
     <>
       <HeroSections language={language} />
-      <SwiperComponent />
       <Zero language={language} />
       <Services language={language} />
-      <ScrollTopButton />
       <Social />
       <Preference language={language} />
       <Offer language={language} />
       <CommentSwiper language={language} />
       <Team language={language} />
       <Advertising language={language} />
+      <Collaborators language={language} />
+      <Post />
       <Footer language={language} />
     </>
   );

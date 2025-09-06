@@ -13,8 +13,8 @@ function Header({ language, setLanguage }) {
  }, [darkMode]);
 
  const translations = {
-  AZ: { home: "Ana Səhifə", services: "Xidmətlər", about: "Haqqımızda", careers: "Vakansiya", contact: "Əlaqə" },
-  EN: { home: "Home", services: "Services", about: "About Us", careers: "Vacancy", contact: "Contact" }
+  AZ: { home: "Ana Səhifə", services: "Xidmətlər", about: "Haqqımızda", careers: "Vakansiya", contact: "Əlaqə", admin: "Portfolio" },
+  EN: { home: "Home", services: "Services", about: "About Us", careers: "Vacancy", contact: "Contact", admin: "Portfolio" }
  };
 
  const handleLanguageChange = (e) => {
@@ -59,6 +59,11 @@ function Header({ language, setLanguage }) {
        <li className="nav-item">
         <a href="#" className={`nav-link fw-bold`}>
          {translations[language].contact}
+        </a>
+       </li>
+       <li className="nav-item">
+        <a href="https://my-platforum.vercel.app/" target="_blank" className={`nav-link fw-bold`}>
+         {translations[language].admin}
         </a>
        </li>
       </ul>

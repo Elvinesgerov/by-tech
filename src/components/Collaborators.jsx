@@ -4,21 +4,22 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay } from 'swiper/modules';
 import './css/Advertising.css';
-import img1 from "../assets/pfsense.png";
-import img2 from "../assets/supermicr.png";
-import img3 from "../assets/hikvsion.png";
-import img4 from "../assets/centos.png";
-import img5 from "../assets/freebsd.png";
-import img6 from "../assets/amd.png";
-import img7 from "../assets/ware.png";
+import img1 from "../assets/face.png";
+import img2 from "../assets/mado.png";
+import img3 from "../assets/montale.png";
+import img4 from "../assets/ozsut.png";
+import img5 from "../assets/turizim.png";
+import img6 from "../assets/ulduzum.png";
+import img7 from "../assets/vitam.png";
 
-function Advertising({ language }) {
+function Collaborators({ language }) {
+
  const translations = {
   AZ: {
-   heading: "Partniyorlarımız"
+   heading: "Əməkdaşlar"
   },
   EN: {
-   heading: "Our partners"
+   heading: "Collaborators"
   }
  };
 
@@ -31,8 +32,8 @@ function Advertising({ language }) {
    <Swiper
     spaceBetween={30}
     modules={[Autoplay]}
-    autoplay={{ delay: 2000, disableOnInteraction: false }}
-    className="advertising-swiper mt-5 pt-5"
+    autoplay={{ delay: 2700, disableOnInteraction: false }}
+    className="advertising-swiper mt-5 mb-5 pt-5"
     breakpoints={{
      0: { slidesPerView: 1 },
      600: { slidesPerView: 2 },
@@ -46,7 +47,7 @@ function Advertising({ language }) {
     ))}
    </Swiper>
   </div>
- );
+ )
 }
 
-export default Advertising;
+export default Collaborators

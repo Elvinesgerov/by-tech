@@ -18,7 +18,7 @@ function Footer({ language }) {
    heading: "Contact Information",
    schedule: "Our service operates daily from Monday to Friday, 9:00 AM to 6:00 PM, GMT+4. Extended hours are available for our Premium clients.",
    addressTitle: "Address",
-   address: "Bülbül Pr42, Jale Plaza, 5th floor",
+   address: "Bulbul Pr42, Jale Plaza, 5th floor",
    phoneTitle: "Phones",
    phone: "010 529 18 29",
    emailTitle: "E-mail",

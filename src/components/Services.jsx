@@ -11,14 +11,10 @@ import foto1 from "../assets/foto1.svg";
 import foto2 from "../assets/foto2.svg";
 import foto3 from "../assets/foto3.svg";
 import foto4 from "../assets/foto4.svg";
-import foto5 from "../assets/foto5.svg";
 import foto6 from "../assets/foto6.svg";
 import foto7 from "../assets/foto7.svg";
 import foto8 from "../assets/foto8.svg";
-import foto9 from "../assets/foto9.svg";
 import foto10 from "../assets/foto10.svg";
-import foto11 from "../assets/foto11.svg";
-import foto12 from "../assets/foto12.svg";
 import './css/Services.css';
 
 function Services({ language }) {
@@ -57,28 +53,20 @@ function Services({ language }) {
       { title: "İstifadəçi və sorğu xidmətinin dəstəyi", frontImg: foto2, backText: "Sorğu xidmətinin ixtisaslaşmış mütəxəssis komandası müştərilərimizin qayğısına qalır." },
       { title: "24/7 aktiv monitorinq", frontImg: foto3, backText: "İnfrastrukturun aktiv monitorinqini həyata keçirməklə problemləri aradan qaldırırıq." },
       { title: "Cisco mütəxəssis komandası", frontImg: foto4, backText: "CCİE, CCNP və CCNA sertifikatlı mühəndis komandası təhlükəsiz şəbəkə infrastrukturu quracaq." },
-      { title: "Telefoniya və səs rabitəsi", frontImg: foto5, backText: "Korporativ sektor üçün istənilən çətinlikdə problemin peşəkar həlli." },
       { title: "Server infrastrukturu", frontImg: foto6, backText: "Server infrastrukturunu layihələşdirir, inkişaf etdirir və dəstəkləyirik." },
       { title: "Domein Satışı", frontImg: foto7, backText: "Biz sizə ən yaxşı domenləri təqdim edirik və biznesinizi rəqəmsal dünyada önə çıxarırıq." },
-      { title: "Kibertəhlükəsizlik", frontImg: foto9, backText: "Sistemlərinizi zərərli hücumlardan qoruyuruq." },
       { title: "Mobil Tətbiqlərin hazırlanması", frontImg: foto8, backText: "iOS və Android tətbiqlərini yüksək performansla hazırlayırıq." },
       { title: "Web Saytların hazırlanması", frontImg: foto10, backText: "SEO optimizasiya olunmuş və istifadəçi dostu saytlar hazırlayırıq." },
-      { title: "UX/UI Dizayn", frontImg: foto11, backText: "İntuitiv və funksional UX/UI dizayn həlləri təklif edirik." },
-      { title: "Qrafik Dizayn", frontImg: foto12, backText: "Logolardan reklam materiallarına qədər qrafik dizayn xidmətləri göstəririk." }
     ],
     EN: [
       { title: "Remote and Local Support", frontImg: foto1, backText: "We offer customizable service packages tailored to your business needs." },
       { title: "User and Help Desk Support", frontImg: foto2, backText: "Our specialized help desk team takes care of our customers." },
       { title: "24/7 Active Monitoring", frontImg: foto3, backText: "We actively monitor infrastructure to resolve issues proactively." },
       { title: "Cisco Specialist Team", frontImg: foto4, backText: "Our CCIE, CCNP, and CCNA certified engineers build secure network infrastructure." },
-      { title: "Telephony and Voice Communication", frontImg: foto5, backText: "Professional solutions for corporate telephony and voice services." },
       { title: "Server Infrastructure", frontImg: foto6, backText: "We design, develop, and support server infrastructures." },
       { title: "Domain Sales", frontImg: foto7, backText: "We provide reliable domains to strengthen your business online." },
-      { title: "Cybersecurity", frontImg: foto9, backText: "We protect your systems and networks from malicious attacks." },
       { title: "Mobile App Development", frontImg: foto8, backText: "We develop high-performance iOS and Android applications." },
       { title: "Website Development", frontImg: foto10, backText: "We build modern, SEO-friendly, and user-friendly websites." },
-      { title: "UX/UI Design", frontImg: foto11, backText: "We deliver intuitive, attractive, and functional UX/UI design solutions." },
-      { title: "Graphic Design", frontImg: foto12, backText: "We provide creative design from logos to marketing materials." }
     ]
   };
 
@@ -91,12 +79,14 @@ function Services({ language }) {
             <div key={index} className="col-md-3 col-sm-6">
               <div className="service-box rounded-3 d-flex align-items-center justify-content-center text-center text-white"
                 style={{
-                  backgroundImage: `url(${img})`,
+                  backgroundImage: `
+                  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url(${img})`,
                   height: '200px',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}>
-                <h1 className="fs-4 fw-bold bg-black p-2 rounded-3">{translations[language].cards[index]}</h1>
+                <h1 className="fs-4 fw-bold p-2 rounded-3">{translations[language].cards[index]}</h1>
               </div>
             </div>
           ))}

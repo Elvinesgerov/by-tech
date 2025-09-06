@@ -70,6 +70,7 @@
  width: 120px;
  height: 120px;
  object-fit: cover;
+ filter: invert(26%) sepia(61%) saturate(467%) hue-rotate(174deg) brightness(92%) contrast(88%);
 }
 
 .flip-card-front {

@@ -1,6 +1,8 @@
 .advertising-swiper {
  width: 80%;
- height: 50vh;
+ height: 30vh;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ border-radius: 20px;
 }
 
 .advertising-slide {

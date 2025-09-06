@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/HeroSections.css';
-import BackgroundImage from '../assets/teamfoto.webp';
+import BackgroundImage from '../assets/Team.jpeg';
 
 function HeroSections({ language }) {
  const translations = {
@@ -22,7 +22,7 @@ function HeroSections({ language }) {
   <div
    className="d-flex align-items-center w-100"
    style={{
-    backgroundImage: `url(${BackgroundImage})`,
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${BackgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     minHeight: "100vh"

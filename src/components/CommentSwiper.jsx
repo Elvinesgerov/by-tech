@@ -3,7 +3,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import img1 from '../assets/img1.jpg';
 import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
@@ -39,18 +39,12 @@ function CommentSwiper({ language }) {
 
  const content = translations[language];
 
- const pagination = {
-  clickable: true,
-  renderBullet: (index, className) => '<span class="' + className + '">' + (index + 1) + '</span>',
- };
-
  return (
   <div className="container py-5">
-   <h1 className="text-center fs-1 mb-4">{content.heading}</h1>
+   <h1 className="text-center fs-1">{content.heading}</h1>
 
    <Swiper
-    pagination={pagination}
-    modules={[Pagination, Autoplay]}
+    modules={[Autoplay]}
     className="commentSwiper"
     autoplay={{
      delay: 4000,
@@ -58,7 +52,7 @@ function CommentSwiper({ language }) {
     }}
    >
     {content.slides.map((slide, index) => (
-     <SwiperSlide key={index} className={`${index % 2 === 0 ? "odd" : "even"} p-4 flex-column gap-2`}>
+     <SwiperSlide key={index} className={`${index % 2 === 0 ? "odd" : "even"} p-4 flex-column gap-2 mt-5`}>
       <div className="container">
        <div className="row justify-content-center text-center">
         <div className="col-12 col-md-10 col-lg-8">
