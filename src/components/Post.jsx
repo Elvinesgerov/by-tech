@@ -10,19 +10,21 @@ function Post() {
    script.async = true;
    script.id = 'instagram-embed-script';
    document.body.appendChild(script);
+  } else {
+   window.instgrm?.Embeds?.process();
   }
  }, []);
 
  const blockquoteStyle = {
-  margin: "1px",
+  margin: "10px auto",
+  width: "100%",
   maxWidth: "540px",
-  minWidth: "326px",
-  width: "99%",
  };
 
  return (
-  <div className='container-fluid h-auto p-5'>
-   <div className='w-100 d-flex gap-3 align-items-center justify-content-center mb-5'>
+  <div className='container py-5'>
+   {/* Header */}
+   <div className='d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 mb-5 text-center text-md-start'>
     <div className='logo-box bg-black d-flex align-items-center justify-content-center rounded-circle'>
      <i className="ri-instagram-fill fs-4 text-white"></i>
     </div>
@@ -36,38 +38,24 @@ function Post() {
     </a>
    </div>
 
-   <div className='d-flex justify-content-around flex-wrap mt-5 gap-5'>
-    <blockquote
-     className="instagram-media"
-     data-instgrm-captioned
-     data-instgrm-permalink="https://www.instagram.com/p/DKr7-3ZCV--/"
-     data-instgrm-version="14"
-     style={blockquoteStyle}
-    ></blockquote>
-
-    <blockquote
-     className="instagram-media"
-     data-instgrm-captioned
-     data-instgrm-permalink="https://www.instagram.com/p/DKfaCb9CZsb/"
-     data-instgrm-version="14"
-     style={blockquoteStyle}
-    ></blockquote>
-
-    <blockquote
-     className="instagram-media"
-     data-instgrm-captioned
-     data-instgrm-permalink="https://www.instagram.com/p/DKd-fn9iFqV/"
-     data-instgrm-version="14"
-     style={blockquoteStyle}
-    ></blockquote>
-
-    <blockquote
-     className="instagram-media"
-     data-instgrm-captioned
-     data-instgrm-permalink="https://www.instagram.com/p/DKd9FDViyrL/"
-     data-instgrm-version="14"
-     style={blockquoteStyle}
-    ></blockquote>
+   {/* Instagram posts */}
+   <div className='row justify-content-center gap-4 post-box'>
+    {[
+     "https://www.instagram.com/p/DKr7-3ZCV--/",
+     "https://www.instagram.com/p/DKfaCb9CZsb/",
+     "https://www.instagram.com/p/DKd-fn9iFqV/",
+     "https://www.instagram.com/p/DKd9FDViyrL/"
+    ].map((link, index) => (
+     <div key={index} className='col-12 col-sm-6 col-lg-4'>
+      <blockquote
+       className="instagram-media"
+       data-instgrm-captioned
+       data-instgrm-permalink={link}
+       data-instgrm-version="14"
+       style={blockquoteStyle}
+      ></blockquote>
+     </div>
+    ))}
    </div>
   </div>
  );

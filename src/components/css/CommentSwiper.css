@@ -59,15 +59,15 @@
  background-color: #1C1C27;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 767px) {
  .commentSwiper {
   width: 85% !important;
-  height: 70vh;
+  height: 100vh !important;
  }
 }
 
 @media (max-width: 769px) {
  .commentSwiper {
-  height: 90vh !important;
+  height: 130vh !important;
  }
 }

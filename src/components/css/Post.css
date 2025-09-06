@@ -1,8 +1,18 @@
 .logo-box {
  width: 60px;
  height: 60px;
+ color: white;
 }
 
-.logo-box {
- color: white;
+@media (max-width: 576px) {
+ .logo-box {
+  width: 50px;
+  height: 50px;
+ }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+ .post-box {
+  margin-left: -50px;
+ }
 }
