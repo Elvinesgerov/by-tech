@@ -5,15 +5,15 @@ import './css/Zero.css';
 function Zero({ language }) {
  const translations = {
   AZ: {
-   title: "BYTech",
+   title: "Bytech Solutions",
    subtitle: "Dəstək və Həllər",
-   paragraph: "ByTech Şirkətinin məqsədi uzun müddət beynəlxalq standartlara əsaslanan, stabil və peşəkar fəaliyyəti nəticəsində əldə etdiyi müştəri etibarını qoruyub saxlamaq, müştərilərə əməkdaşlar tərəfindən peşəkar xidmətin göstərilməsi, son texnoloji nailiyyətlər əsasında qurulan avadanlıqların və həllərin təklifi, etibarlı satış və servis xidmətləri göstərməkdir.",
+   paragraph: "BYTech Solutions – Etibarlı xidmət, innovativ həllər və müştəri etimadını qorumaq missiyası ilə fəaliyyət göstərir",
    button: "Ətraflı"
   },
   EN: {
-   title: "BYTech",
+   title: "Bytech Solutions",
    subtitle: "Support and Solutions",
-   paragraph: "ByTech aims to maintain the trust of its clients through long-term professional operations based on international standards, providing professional services by its staff, offering solutions and equipment based on the latest technological achievements, and delivering reliable sales and service.",
+   paragraph: "BYTech Solutions – Operates with a mission to provide reliable service, innovative solutions, and maintain trust in purpose",
    button: "Learn More"
   }
  };

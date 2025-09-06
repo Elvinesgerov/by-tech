@@ -41,7 +41,7 @@ function CommentSwiper({ language }) {
 
  return (
   <div className="container py-5">
-   <h1 className="text-center fs-1">{content.heading}</h1>
+   <h1 className="text-center text-info fü-bold fs-1">{content.heading}</h1>
 
    <Swiper
     modules={[Autoplay]}

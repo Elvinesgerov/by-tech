@@ -1,11 +1,16 @@
 .about-container i {
- color: #106CEF;
+ color: #212529;
 }
 
-span {
- color: #106CEF !important;
+.offer-span {
+ color: #212529 !important;
 }
 
-h5 {
- color: #106CEF;
+[data-bs-theme="dark"] .offer-text,
+[data-bs-theme="dark"] .offer-span {
+ color: white !important;
+}
+
+[data-bs-theme="dark"] .offer-p {
+ color: rgb(108, 104, 104) !important;
 }

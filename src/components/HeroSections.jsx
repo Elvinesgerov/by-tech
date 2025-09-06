@@ -5,16 +5,14 @@ import BackgroundImage from '../assets/Team.jpeg';
 function HeroSections({ language }) {
  const translations = {
   AZ: {
-   title: "SİZİN ETİBAR EDƏ BİLƏCƏKİSİNİZ",
+   title: "Etibar, İnnovasiya və Uğur!",
    highlight: "BYTech KOMANDASI",
-   paragraph1: "Biz Sizin biznes prosseslərinizin məhsuldarlığını yüksəldəcək xidmətlər təklif edirik.",
-   paragraph2: "İcazə verin Sizə səmərəli işləməyin yollarını göstərək."
+   paragraph1: "Daha çevik və səmərəli biznes üçün etibarlı xidmətlər təqdim edirik.",
   },
   EN: {
-   title: "YOUR TRUSTWORTHY",
+   title: "Trust, Innovation and Success!",
    highlight: "BYTech TEAM",
-   paragraph1: "We provide services that will increase the efficiency of your business processes.",
-   paragraph2: "Let us show you ways to work efficiently."
+   paragraph1: "We provide reliable services for more agile and origin-oriented businesses.",
   }
  };
 
@@ -37,7 +35,6 @@ function HeroSections({ language }) {
         <span className="highlight"> {translations[language].highlight}</span>
        </h1>
        <p className="fs-4 fw-bold">{translations[language].paragraph1}</p>
-       <p className="fs-4 fw-bold">{translations[language].paragraph2}</p>
       </div>
      </div>
     </div>

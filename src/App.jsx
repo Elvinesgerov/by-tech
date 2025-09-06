@@ -11,10 +11,7 @@ import Social from './components/Social';
 import Preference from './components/Preference';
 import Offer from './components/Offer';
 import CommentSwiper from './components/CommentSwiper';
-import Team from './components/Team';
 import Advertising from './components/Advertising';
-import Collaborators from './components/Collaborators';
-import Post from './components/Post';
 import Footer from './components/Footer';
 import About from './components/About';
 
@@ -35,10 +32,7 @@ function App() {
       <Preference language={language} />
       <Offer language={language} />
       <CommentSwiper language={language} />
-      <Team language={language} />
       <Advertising language={language} />
-      <Collaborators language={language} />
-      <Post />
       <Footer language={language} />
     </>
   );

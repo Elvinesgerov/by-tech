@@ -27,12 +27,12 @@ function Advertising({ language }) {
 
  return (
   <div>
-   <h1 className='text-center fs-2 fw-bold mt-5'>{content.heading}</h1>
+   <h1 className='text-center text-info fs-2 fw-bold mt-5'>{content.heading}</h1>
    <Swiper
     spaceBetween={30}
     modules={[Autoplay]}
     autoplay={{ delay: 2000, disableOnInteraction: false }}
-    className="advertising-swiper mt-5 pt-5"
+    className="advertising-swiper mt-5 pt-5 mb-5"
     breakpoints={{
      0: { slidesPerView: 1 },
      600: { slidesPerView: 2 },

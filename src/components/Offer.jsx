@@ -65,15 +65,15 @@ function Offer({ language }) {
  return (
   <div className='container py-5'>
    <div className='text-center mb-5'>
-    <h1 className='fw-bold' style={{ color: "#106CEF" }}>{content.heading}</h1>
-    <h3 style={{ color: "#106CEF" }}>{content.subheading}</h3>
+    <h1 className='offer-text' style={{ color: "#212529" }}>{content.heading}</h1>
+    <h3 style={{ color: "#212529" }}>{content.subheading}</h3>
    </div>
 
    <div className='text-center mb-5'>
     {content.paragraphs.map((p, index) => (
-     <p key={index} className='text-secondary fs-5 fw-bold'>
+     <p key={index} className='text-secondary offer-p fs-5 fw-bold'>
       {p.text}
-      <span className='fs-4'> {p.highlight}</span>
+      <span className='fs- offer-span'> {p.highlight}</span>
      </p>
     ))}
    </div>
@@ -81,8 +81,8 @@ function Offer({ language }) {
    <div className='row text-center g-4'>
     {content.cards.map((card, index) => (
      <div key={index} className='col-12 col-md-4 d-flex flex-column align-items-center'>
-      <i className={`${card.icon} fs-1 fw-bold mb-2`} style={{ color: "#106CEF" }}></i>
-      <h5 className='fw-bold mb-2' style={{ color: "#106CEF" }}>{card.title}</h5>
+      <i className={`${card.icon} fs-1 fw-bold mb-2`}></i>
+      <h5 className='fw-bold mb-2'>{card.title}</h5>
       <p className='fs-6' style={{ maxWidth: '400px' }}>{card.text}</p>
      </div>
     ))}

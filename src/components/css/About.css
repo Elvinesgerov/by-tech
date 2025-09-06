@@ -58,14 +58,28 @@
  }
 }
 
-@media (min-width: 768px) and (max-width: 1193px) {
+@media (min-width: 768px) and (max-width: 1400px) {
  .main-container {
   margin-left: 6%;
  }
 }
 
-@media (max-width: 1399px) {
+@media (min-width: 1500px) {
+ .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  padding-right: 0;
+ }
+
+ .left-box,
+ .right-box {
+  margin: 0;
+ }
+
  .center-box {
-  display: none !important;
+  display: block !important;
+  margin: 0;
  }
 }

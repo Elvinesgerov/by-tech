@@ -88,9 +88,6 @@ function About({ language }) {
      </div>
     </div>
 
-    {/* Orta xətt */}
-    <div className="center-box d-none d-sm-block d-md-block d-lg-block"></div>
-
     {/* Sağ tərəf */}
     <div className="right-box d-flex flex-column align-items-center text-center">
      <div className="gap-2 d-flex flex-column align-items-center text-center">

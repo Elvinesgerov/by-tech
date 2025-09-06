@@ -42,7 +42,7 @@ function Header({ language, setLanguage }) {
         </Link>
        </li>
        <li className="nav-item">
-        <a href="#" className={`nav-link fw-bold`}>
+        <a href="#services" className={`nav-link fw-bold`}>
          {translations[language].services}
         </a>
        </li>
